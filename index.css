@@ -1,0 +1,160 @@
+
+header {
+  height: 140px;
+  background-color: black;
+  color: white;
+  padding:  8px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 400px;
+  
+ } 
+.logo img{
+  width: 200px;
+}  
+  
+
+nav{
+  display: flex;
+  align-items: center;
+  
+  
+
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  gap: 50px;
+  margin-left: 200px;
+  font-size: 20px ;
+  
+ 
+  
+}
+nav ul  a:hover{
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+/* Estilos globales */
+*,
+*:before,
+*::after {
+box-sizing: border-box;
+}
+
+html,
+body {
+font-size: 16px;
+margin: 0;
+padding: 0;
+display: block;
+}
+
+/* Estilo general del body */
+body {
+  margin: 0%;
+  background: url(/img/fondo.jpg);
+  
+  /*line-height: 1.317101995;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #5c7470;
+  display: flex;
+  flex-direction: column;
+  
+  padding: 32px 0;*/
+}
+
+h1 {
+  font-size: 30px ;
+  color: #ff1d1d;
+
+}
+
+.cards-grid {
+display: flex;
+grid-gap: 80px;
+padding-bottom: 60px;
+justify-content: center;
+}
+
+/* Estilos de la tarjeta flip */
+.flip-card {
+width: 330px;
+height: 300px;
+perspective: 2000px; /* Agrega perspectiva 3D */
+margin-left: 100px;
+
+
+
+
+}
+
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+border-radius: 28px;
+transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+transform-style: preserve-3d;
+
+}
+
+/* Caras de la tarjeta */
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+border-radius: 28px;
+backface-visibility: hidden; /* Esconde la parte trasera cuando se voltea */
+
+
+}
+
+.flip-card-front {
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.flip-card-back {
+font-size: 1.25rem;
+text-align: center;
+display: grid;
+place-items: center;
+padding: 32px;
+background-color: #b4b4b4;
+transform: rotateY(180deg); /* Gira la parte posterior */
+}
+
+/* Efecto al pasar el mouse */
+.flip-card:hover .flip-card-inner {
+transform: rotateY(-180deg); /* Gira la tarjeta al voltear */
+}
+.flip-card-front {
+  background-image: url('img/descarga__5_-removebg-preview.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Esto ajusta la imagen para cubrir completamente el contenedor */
+  width: 270px; /* Asegura que ocupe el 100% del contenedor */
+  height: 270px; /* Ajusta el alto al 100% del contenedor */
+  border-radius: 28px; /* Para bordes redondeados si lo deseas */
+}
+section{
+  color: #000000;
+  background-color: rgb(105, 137, 196);
+
+ 
+}
+
+
+
+
+
+
+
+
+
